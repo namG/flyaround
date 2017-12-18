@@ -37,7 +37,7 @@ class TerrainController extends Controller
      * @Route("/new", name="terrain_new")
      * @Method({"GET", "POST"})
      */
-    public function newAction(Request $request)
+   /** public function newAction(Request $request)
     {
         $terrain = new Terrain();
         $form = $this->createForm('WCS\CoavBundle\Form\TerrainType', $terrain);
@@ -56,7 +56,7 @@ class TerrainController extends Controller
             'form' => $form->createView(),
         ));
     }
-
+*/
     /**
      * Finds and displays a terrain entity.
      *
@@ -79,7 +79,7 @@ class TerrainController extends Controller
      * @Route("/{id}/edit", name="terrain_edit")
      * @Method({"GET", "POST"})
      */
-    public function editAction(Request $request, Terrain $terrain)
+   /* public function editAction(Request $request, Terrain $terrain)
     {
         $deleteForm = $this->createDeleteForm($terrain);
         $editForm = $this->createForm('WCS\CoavBundle\Form\TerrainType', $terrain);
@@ -96,7 +96,7 @@ class TerrainController extends Controller
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
         ));
-    }
+    }*/
 
     /**
      * Deletes a terrain entity.
@@ -104,7 +104,7 @@ class TerrainController extends Controller
      * @Route("/{id}", name="terrain_delete")
      * @Method("DELETE")
      */
-    public function deleteAction(Request $request, Terrain $terrain)
+  /*  public function deleteAction(Request $request, Terrain $terrain)
     {
         $form = $this->createDeleteForm($terrain);
         $form->handleRequest($request);
@@ -125,12 +125,12 @@ class TerrainController extends Controller
      *
      * @return \Symfony\Component\Form\Form The form
      */
-    private function createDeleteForm(Terrain $terrain)
+  /*  private function createDeleteForm(Terrain $terrain)
     {
         return $this->createFormBuilder()
             ->setAction($this->generateUrl('terrain_delete', array('id' => $terrain->getId())))
             ->setMethod('DELETE')
             ->getForm()
         ;
-    }
+    }*/
 }
