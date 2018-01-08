@@ -1,11 +1,11 @@
 {
-    "name": "symfony/framework-standard-edition",
+    "name": "flyaround",
     "license": "MIT",
     "type": "project",
     "description": "The \"Symfony Standard Edition\" distribution",
     "autoload": {
         "psr-4": {
-            " ": "src/"
+            "": "src/"
         },
         "classmap": [ "app/AppKernel.php", "app/AppCache.php" ]
     },

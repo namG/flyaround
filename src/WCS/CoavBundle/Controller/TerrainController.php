@@ -65,11 +65,11 @@ class TerrainController extends Controller
      */
     public function showAction(Terrain $terrain)
     {
-        $deleteForm = $this->createDeleteForm($terrain);
+        //$deleteForm = $this->createDeleteForm($terrain);
 
         return $this->render('terrain/show.html.twig', array(
             'terrain' => $terrain,
-            'delete_form' => $deleteForm->createView(),
+
         ));
     }
 
